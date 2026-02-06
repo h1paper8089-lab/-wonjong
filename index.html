@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>테트리스</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="board-section">
+      <h1>테트리스</h1>
+      <canvas id="game" width="300" height="600" aria-label="테트리스 게임 보드"></canvas>
+      <div class="mobile-controls">
+        <button data-action="left">◀</button>
+        <button data-action="rotate">⟳</button>
+        <button data-action="right">▶</button>
+        <button data-action="down">▼</button>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <div class="stat">
+        <span>점수</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat">
+        <span>줄</span>
+        <strong id="lines">0</strong>
+      </div>
+      <div class="stat">
+        <span>레벨</span>
+        <strong id="level">1</strong>
+      </div>
+      <p class="help">
+        ← → 이동 / ↑ 회전 / ↓ 빠르게 내리기 / Space 즉시 내리기 / P 일시정지
+      </p>
+      <button id="startBtn">시작 / 재시작</button>
+      <p id="status">시작 버튼을 눌러 게임을 시작하세요.</p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
